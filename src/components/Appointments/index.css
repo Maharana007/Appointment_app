@@ -1,0 +1,47 @@
+/* Write your CSS here */
+.bg-container {
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  height: 100vh;
+  background-size: cover;
+  /* width: 578px; */
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: #ffffff;
+  width: 85vw;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.heading {
+  font-size: 15px;
+}
+.main-img {
+  width: 50%;
+}
+.button {
+  margin-top: 10px;
+}
+.line {
+  font-size: 1px;
+  width: 80vw;
+  margin-top: 10px;
+}
+.appointment-star {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub-heading {
+  font-weight: bold;
+}
+.stars {
+  height: 20px;
+}

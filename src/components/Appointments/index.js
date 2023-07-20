@@ -10,7 +10,7 @@ import AppointmentItem from '../AppointmentItem'
 import './index.css'
 
 class Appointments extends Component {
-  sate = {
+  state = {
     titleInput: '',
     dateInput: '',
     appointmentList: [],
@@ -79,55 +79,57 @@ class Appointments extends Component {
     return (
       <div className="bg-container">
         <div className="container">
-          <form className="form" onSubmit="addAppointment">
-            <div>
-              <h1 className="heading">Add Appointments</h1>
+          <div className="appointment-card">
+            <form className="form" onSubmit={this.addAppointment}>
               <div>
-                <label htmlFor="title" className="label">
-                  TITLE
-                </label>
-                <br />
-                <input
-                  type="text"
-                  className="title"
-                  id="title"
-                  value={titleInput}
-                  onChange={this.changeTitle}
-                  placeholder="Title"
-                />
+                <h1 className="heading">Add Appointments</h1>
+                <div>
+                  <label htmlFor="title" className="label">
+                    TITLE
+                  </label>
+                  <br />
+                  <input
+                    type="text"
+                    className="input"
+                    id="title"
+                    value={titleInput}
+                    onChange={this.changeTitle}
+                    placeholder="Title"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="date" className="label">
+                    DATE
+                  </label>
+                  <br />
+                  <input
+                    value={dateInput}
+                    type="date"
+                    className="input"
+                    id="date"
+                    onChange={this.changeDate}
+                  />
+                </div>
+                <button type="submit" className="button">
+                  add
+                </button>
               </div>
-              <div>
-                <label htmlFor="date" className="label">
-                  DATE
-                </label>
-                <br />
-                <input
-                  value={dateInput}
-                  type="date"
-                  className="date"
-                  id="date"
-                  onChange={this.changeDate}
-                />
-              </div>
-              <button type="button" className="button">
-                add
-              </button>
-            </div>
-          </form>
-          <img
-            className="main-img"
-            src="https://assets.ccbp.in/frontend/react-js/appointments-app/appointments-img.png "
-            alt="appointments"
-          />
+            </form>
+            <img
+              className="main-img"
+              src="https://assets.ccbp.in/frontend/react-js/appointments-app/appointments-img.png "
+              alt="appointments"
+            />
+          </div>
           <hr className="line" />
           <div className="appointment-star">
-            <h1 className="sub-heading"> Appointments </h1>
+            <h1 className="sub-heading"> Appointments</h1>
             <button
               type="button"
               className={`stars ${filterClassName}`}
               onClick={this.onFilter}
             >
-              Stared
+              Starred
             </button>
           </div>
           <ul className="appoint-list">

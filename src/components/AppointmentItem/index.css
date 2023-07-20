@@ -1,1 +1,34 @@
 /* Write your CSS here */
+.list {
+  border: 2px solid #b5b7c4;
+  padding: 6px;
+  border-radius: 5px;
+  min-height: 35px;
+  max-height: 75px;
+  margin-right: 5px;
+  width: 180px;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -10px;
+  margin-left: 5px;
+}
+.star-button {
+  background-color: transparent;
+  border: none;
+}
+.title {
+  font-size: 13px;
+  font-weight: bold;
+}
+.date {
+  font-size: 11px;
+  margin-left: 5px;
+  margin-top: -2px;
+  color: #b5b7c4;
+}
+.star {
+  height: 20px;
+}

@@ -1,4 +1,6 @@
 // Write your code here
+import './index.css'
+
 const AppointmentItem = props => {
   const {userAppointment, isToggleLike} = props
   const {id, title, date, isLike} = userAppointment
